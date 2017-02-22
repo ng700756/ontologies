@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ontologies.knowitive.com/users#"
+     xml:base="http://ontologies.knowitive.com/users"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:users="http://ontologies.knowitive.com/users#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <owl:Ontology rdf:about="http://ontologies.knowitive.com/users">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <rdfs:comment>The KnowitiveUser is a description of the users that uses a application.
+
+This version is only a first approach (draft 1).</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/image -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/image"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies.knowitive.com/users#password -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies.knowitive.com/users#password"/>
+    
+
+
+    <!-- http://ontologies.knowitive.com/users#status -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies.knowitive.com/users#status">
+        <rdfs:comment>If is active or inactive</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies.knowitive.com/users#Administrator -->
+
+    <owl:Class rdf:about="http://ontologies.knowitive.com/users#Administrator">
+        <rdfs:subClassOf rdf:resource="http://ontologies.knowitive.com/users#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies.knowitive.com/users#User -->
+
+    <owl:Class rdf:about="http://ontologies.knowitive.com/users#User">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Image -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Image">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment>foaf:homepage</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies.knowitive.com/users#Administrators -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies.knowitive.com/users#Administrators">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies.knowitive.com/users#Contpaqi -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies.knowitive.com/users#Contpaqi">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:homepage>http://contpaqi.com.mx</foaf:homepage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies.knowitive.com/users#limves -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies.knowitive.com/users#limves">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:image rdf:resource="http://ontologies.knowitive.com/users#1bfbfb8:ff2d5911a6:-7d27"/>
+        <foaf:name>Luis Escobar</foaf:name>
+        <foaf:homepage>http://users.ox.ac.uk/~zool0770/</foaf:homepage>
+        <foaf:mbox xml:lang="gmail.com">limves</foaf:mbox>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies.knowitive.com/users#root -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies.knowitive.com/users#root">
+        <rdf:type rdf:resource="http://ontologies.knowitive.com/users#User"/>
+        <password>Passw0rd</password>
+        <foaf:name>Administrator</foaf:name>
+        <foaf:mbox xml:lang="knowitive.com">admin</foaf:mbox>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies.knowitive.com/users#1bfbfb8:ff2d5911a6:-7d27 -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies.knowitive.com/users#1bfbfb8:ff2d5911a6:-7d27">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
