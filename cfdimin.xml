@@ -3,6 +3,6 @@
 	xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd"
 	xmlns:cfdi="http://www.sat.gob.mx/cfd/3"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	fecha="2012-01-01T20:38:12">
+	fecha="2017-01-01T20:38:12">
 	<cfdi:Concepto descripcion="VIBRAMICINA 100MG 10"/>
 </cfdi:Comprobante>
