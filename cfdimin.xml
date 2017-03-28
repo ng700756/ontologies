@@ -6,8 +6,6 @@
 	fecha="2012-01-01T20:38:12" total="488.50">
 	<cfdi:Emisor   rfc="PPL961114GZ1"  nombre="PHARMA PLUS SA DE CV"/>
 	<cfdi:Receptor rfc="PEPJ8001019Q8" nombre="JUAN PEREZ PEREZ"/>
-	<cfdi:Conceptos>
-		<cfdi:Concepto  importe="244.00" cantidad="1.0"
+	<cfdi:Concepto  importe="244.00" cantidad="1.0"
 			descripcion="VIBRAMICINA 100MG 10"/>
-	</cfdi:Conceptos>
 </cfdi:Comprobante>
