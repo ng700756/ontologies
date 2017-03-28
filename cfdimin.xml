@@ -2,5 +2,16 @@
 <cfdi:Comprobante
 	xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd"
 	xmlns:cfdi="http://www.sat.gob.mx/cfd/3"
-	fecha="2017-01-01T20:38:12">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.2"
+	fecha="2012-01-01T20:38:12"
+	tipoDeComprobante="ingreso" total="488.50" subTotal="488.50"
+	LugarExpedicion="México" metodoDePago="cheque">
+	<cfdi:Emisor rfc="PPL961114GZ1" nombre="PHARMA PLUS SA DE CV">
+	</cfdi:Emisor>
+	<cfdi:Receptor rfc="PEPJ8001019Q8" nombre="JUAN PEREZ PEREZ">
+	</cfdi:Receptor>
+	<cfdi:Conceptos>
+		<cfdi:Concepto unidad="CAPSULAS" importe="244.00" cantidad="1.0"
+			descripcion="VIBRAMICINA 100MG 10" valorUnitario="244.00" />
+	</cfdi:Conceptos>
 </cfdi:Comprobante>
