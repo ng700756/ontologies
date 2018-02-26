@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://spiga.ai/ontologies/is"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://spiga.ai/ontologies/is">
+    <Prefix name="" IRI="http://spiga.ai/ontologies/is#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Interpretative semantic units</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Inherent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Claseme"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#form"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Colombey-las-dos-iglesias"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#content"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aferent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specific"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SememeNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Semanteme"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tenedor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apostol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSememes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noeme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taxeme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Isotopy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sememe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reference"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Misa"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Aferent"/>
+        <Class IRI="#Seme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Claseme"/>
+        <Class IRI="#Sememe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inherent"/>
+        <Class IRI="#Seme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noeme"/>
+        <Class IRI="#Seme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Semanteme"/>
+        <Class IRI="#Sememe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specific"/>
+        <Class IRI="#Seme"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Sememe"/>
+        <NamedIndividual IRI="#Apostol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sememe"/>
+        <NamedIndividual IRI="#Colombey-las-dos-iglesias"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sememe"/>
+        <NamedIndividual IRI="#Misa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sememe"/>
+        <NamedIndividual IRI="#tenedor"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSememes"/>
+        <Class IRI="#Isotopy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSememes"/>
+        <Class IRI="#Taxeme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSememes"/>
+        <Class IRI="#Sememe"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#reference"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SememeNumber"/>
+        <Class IRI="#Isotopy"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#content"/>
+        <Class IRI="#Seme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#form"/>
+        <Class IRI="#Seme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#number"/>
+        <Class IRI="#Seme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#reference"/>
+        <Class IRI="#Seme"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#form"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Sememe"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Taxeme"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
