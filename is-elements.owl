@@ -24,10 +24,10 @@
         <Class IRI="#Inherent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Claseme"/>
+        <DataProperty IRI="#form"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#form"/>
+        <Class IRI="#Claseme"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Colombey-las-dos-iglesias"/>
@@ -39,19 +39,19 @@
         <DataProperty IRI="#number"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Specific"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Aferent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Specific"/>
+        <ObjectProperty IRI="#OWLObjectProperty_eff4a368_4fa6_4fc2_b683_33538c386eb7"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#SememeNumber"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Semanteme"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#tenedor"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Apostol"/>
@@ -116,10 +116,10 @@
         <Class IRI="#Sememe"/>
         <NamedIndividual IRI="#Misa"/>
     </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Sememe"/>
-        <NamedIndividual IRI="#tenedor"/>
-    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_eff4a368_4fa6_4fc2_b683_33538c386eb7"/>
+        <Class IRI="#Seme"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSememes"/>
         <Class IRI="#Isotopy"/>
@@ -128,6 +128,10 @@
         <ObjectProperty IRI="#hasSememes"/>
         <Class IRI="#Taxeme"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_eff4a368_4fa6_4fc2_b683_33538c386eb7"/>
+        <Class IRI="#Sememe"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSememes"/>
         <Class IRI="#Sememe"/>
@@ -174,6 +178,11 @@
             </ClassAtom>
         </Head>
     </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_eff4a368_4fa6_4fc2_b683_33538c386eb7</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasSemes</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
